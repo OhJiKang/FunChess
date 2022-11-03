@@ -12,7 +12,7 @@ const Beginplace = {
     "42_blackBishop2",
     "63_whiteKnight2",
     "63_blackPawn2",
-    "43_whiteBishop2",
+    "34_whiteBishop2",
     "54_blackPawn4",
     "54_whitePawn5",
     "54_blackPawn2",
@@ -477,6 +477,7 @@ class Game {
           clickedPiece.changePosition(newPosition, true);
         else clickedPiece.changePosition(newPosition);
         square.append(clickedPiece.img);
+        console.log(`${clickedPiece.position}_${clickedPiece.name}`);
         if (k.shift() != `${clickedPiece.position}_${clickedPiece.name}`) {
           prompt("Wrong");
           window.location.reload();
@@ -484,7 +485,6 @@ class Game {
         if (k.length == 0) {
           prompt("Done");
         }
-        k.push(`${clickedPiece.position}_${clickedPiece.name}`);
         this.clearSquares();
         this.changeTurn();
         if (this.king_checked(this.turn)) {
