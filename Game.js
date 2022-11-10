@@ -38,7 +38,7 @@ const Beginplace = {
     "42_blackBishop2",
     "24_whiteBishop1",
     "24_blackBishop2",
-    "24_whiteKnight2",
+    "24_whiteKnight1",
     "54_blackPawn4",
     "32_whiteQueen",
     "75_blackKnight1",
